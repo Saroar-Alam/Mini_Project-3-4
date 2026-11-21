@@ -17,4 +17,4 @@ Data comes from the free DummyJSON API (no API key needed): https://dummyjson.co
 | localStorage (MP4) | `saveFavorites()`, `loadFavorites()`, `saveFilters()` |
 
 ## Run
-Open `index.html` in a browser (internet required for the API).
+https://saroar-alam.github.io/Mini_Project-3-4/
