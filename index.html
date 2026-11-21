@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Product Explorer</h1>
+    <p>Search products, filter by category and save your favorites.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input id="searchInput" type="search" placeholder="Search products by name or brand">
+      <select id="categorySelect"><option value="all">All categories</option></select>
+      <select id="sortSelect">
+        <option value="default">Sort: Default</option>
+        <option value="price-asc">Price: Low to high</option>
+        <option value="price-desc">Price: High to low</option>
+        <option value="rating">Top rated</option>
+      </select>
+      <button id="favToggle" class="toggle" aria-pressed="false">
+        Favorites only (<span id="favCount">0</span>)
+      </button>
+    </section>
+
+    <p id="resultInfo" class="info"></p>
+    <div id="status" class="status" role="status"></div>
+    <section id="productGrid" class="grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
